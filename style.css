@@ -5,19 +5,21 @@
 }
 
 body{
+    margin:0;
+    overflow: hidden;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #99edc3;
-    
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(6, 6, 140));    
 }
+
 
 .wrapper{
     height: 200px;
     width: 300px;
-    background-color: #3ded97;
+    background-color: #F8B229;
     position: relative;
     display: flex;
     justify-content: center;
@@ -30,7 +32,7 @@ body{
     top: 0;
     width: 80%;
     height: 80%; 
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     z-index: 2;
     transition: 0.80s ;
@@ -42,12 +44,15 @@ body{
     width: 80px;
     height: 80px;
     margin: 20px;
-    margin-top: 50px;
-    margin-left: 65px;
+    margin-top: 30px;
+    margin-left: 60px;
     font-size: 13px;
     font-weight: 200;
     padding: 10px;
     color: rgb(255, 255, 255);
+}
+.p2{
+    padding : 30px;
 }
 
 .envelope{
@@ -57,9 +62,9 @@ body{
     top: 0;
     left: 0;
     border-top: 100px solid transparent;
-    border-right: 150px solid #5fd75f;
-    border-bottom: 100px solid #5fd75f;
-    border-left: 150px solid #37cd37;
+    border-right: 150px solid #BB2528;
+    border-bottom: 100px solid #BB2528;
+    border-left: 150px solid #165B33;
     z-index:  3;
     text-size-adjust: 10px;
 }
@@ -80,14 +85,14 @@ body{
 }
 
 .lid.one{
-    border-top: 100px solid lime;
+    border-top: 100px solid#F8B229;
     transform: rotateX(0deg);
     z-index: 3;
     transition-delay: 0.75s;
 }
 
 .lid.two{
-    border-top: 100px solid #37cd37;
+    border-top: 100px solid#F8B229;
     transform: rotateX(90deg);
     z-index: 1;
     transition-delay: 0.5s;
@@ -106,16 +111,17 @@ body{
 .wrapper:hover .letter{
     transform: translateY(-25px);
     transition-delay: 0.5s;
+    
 }
 
 button{
     margin-left: 90px;
     margin-right: 90px;
     margin-top: 10px;
-    border: solid rgb(153, 255, 0);
-    background-color: rgb(166, 247, 3);
+    border: solid #BB2528;
+    background-color: #BB2528;
     border-radius: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -142,13 +148,13 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
-    background: #fff;
+    background: #BB2528;
     width: 500px;
     height: 500px;
     font-family: sans-serif;
     font-size: 15px;
     margin-top: 30px;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 15px;
     z-index: 5;
     text-align: center;
@@ -164,7 +170,7 @@ h1{
     top: 20px;
     width: 30px;
     height: 30px;
-    background: #04950d;
+    background: #109d00;
     color: #fff;
     font-size: 25px;
     font-weight: 600;
@@ -181,4 +187,70 @@ display: block;
 .popup.active .content{
     transition: all 300ms ease-in-out;
     transform:translate(-50%,-50%) scale(1);
+}
+
+.snowflake{
+    --small: 3px;
+    --medium: 7px;
+    width: var(--small);
+    height: var(--small);
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: snow 6s linear infinite,
+        wind 10s ease-in-out infinite;
+    top:-10%;
+    left: 100% ;
+
+} 
+
+.snowflake:nth-child(2n+3) {
+    width: var(--medium);
+    height: var(--medium);
+}
+
+.snowflake:nth-child(1){
+    left: 98%;
+    animation-delay: 6.5s;
+}
+.snowflake:nth-child(2){
+    left: 18%;
+    animation-delay: 2s;
+}
+.snowflake:nth-child(3){
+    left: 10%;
+    animation-delay: 3.5s;
+}.snowflake:nth-child(4){
+    left: 75%;
+    animation-delay: 6s;
+}.snowflake:nth-child(5){
+    left: 45%;
+    animation-delay: 4.5s;
+}.snowflake:nth-child(6){
+    left: 85%;
+    animation-delay: 5s;
+}.snowflake:nth-child(7){
+    left: 60%;
+    animation-delay: 2s;
+}.snowflake:nth-child(8){
+    left: 50%;
+    animation-delay: 1.5s;
+}.snowflake:nth-child(9){
+    left: 70%;
+    animation-delay: 1s;
+}.snowflake:nth-child(10){
+    left: 20%;
+    animation-delay: 5.5s;
+}
+
+@keyframes snow{
+    100%{
+        top: 150%;
+    }
+}
+
+@keyframes wind {
+    50%{
+        transform: translateX(120px);
+    }
 }
