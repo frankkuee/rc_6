@@ -12,14 +12,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(232, 70, 6),rgba(231, 134, 16, 0.967));    
+    background-image: linear-gradient(rgb(255, 242, 2),rgba(246, 90, 7, 0.967));    
 }
 
 
 .wrapper{
     height: 200px;
     width: 300px;
-    background-color: #462804;
+    background-color: #d9ff00;
     position: relative;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@ body{
     font-size: 13px;
     font-weight: 200;
     padding: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .p2{
     padding : 30px;
@@ -62,9 +62,9 @@ body{
     top: 0;
     left: 0;
     border-top: 100px solid transparent;
-    border-right: 150px solid #b1670e;
-    border-bottom: 100px solid #b1670e;
-    border-left: 150px solid #784609;
+    border-right: 150px solid #ffff00;
+    border-bottom: 100px solid #ffff00;
+    border-left: 150px solid #e9f006;
     z-index:  3;
     text-size-adjust: 10px;
 }
@@ -85,14 +85,14 @@ body{
 }
 
 .lid.one{
-    border-top: 100px solid#F8B229;
+    border-top: 100px solid#b3fa00;
     transform: rotateX(0deg);
     z-index: 3;
     transition-delay: 0.75s;
 }
 
 .lid.two{
-    border-top: 100px solid#F8B229;
+    border-top: 100px solid#b3fa00;
     transform: rotateX(90deg);
     z-index: 1;
     transition-delay: 0.5s;
@@ -118,8 +118,8 @@ button{
     margin-left: 90px;
     margin-right: 90px;
     margin-top: 10px;
-    border: solid #b1670e;
-    background-color: #b1670e;
+    border: solid #f2ff00;
+    background-color: #dada00;
     border-radius: 10px;
     color: rgb(255, 255, 255);
 }
@@ -139,8 +139,8 @@ button{
 
 h1{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 
 }
 .popup .content {
@@ -148,13 +148,13 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
-    background: #ca9501fc;
+    background: #fffffffc;
     width: 500px;
     height: 500px;
     font-family: sans-serif;
     font-size: 15px;
     margin-top: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 15px;
     z-index: 5;
     text-align: center;
@@ -170,7 +170,7 @@ h1{
     top: 20px;
     width: 30px;
     height: 30px;
-    background: #9d6600;
+    background: #fff203;
     color: #fff;
     font-size: 25px;
     font-weight: 600;
@@ -203,7 +203,7 @@ display: block;
 }
 
 .fireworks{
-    background-color: #462804;
+    background-color: #85aa01;
     border-radius: 10px;
     font-size: 15px;
     width: 100px;
