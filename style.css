@@ -12,14 +12,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(255, 242, 2),rgba(246, 90, 7, 0.967));    
+    background-image: linear-gradient(rgb(255, 1, 1),rgb(249, 99, 99));    
 }
 
 
 .wrapper{
     height: 200px;
     width: 300px;
-    background-color: #d9ff00;
+    background-color: #b90909;
     position: relative;
     display: flex;
     justify-content: center;
@@ -62,9 +62,9 @@ body{
     top: 0;
     left: 0;
     border-top: 100px solid transparent;
-    border-right: 150px solid #ffff00;
-    border-bottom: 100px solid #ffff00;
-    border-left: 150px solid #e9f006;
+    border-right: 150px solid #ff0000;
+    border-bottom: 100px solid #ff0000;
+    border-left: 150px solid #cb0303;
     z-index:  3;
     text-size-adjust: 10px;
 }
@@ -85,14 +85,14 @@ body{
 }
 
 .lid.one{
-    border-top: 100px solid#b3fa00;
+    border-top: 100px solid#9b0303;
     transform: rotateX(0deg);
     z-index: 3;
     transition-delay: 0.75s;
 }
 
 .lid.two{
-    border-top: 100px solid#b3fa00;
+    border-top: 100px solid#9b0303;
     transform: rotateX(90deg);
     z-index: 1;
     transition-delay: 0.5s;
@@ -118,8 +118,8 @@ button{
     margin-left: 90px;
     margin-right: 90px;
     margin-top: 10px;
-    border: solid #f2ff00;
-    background-color: #dada00;
+    border: solid #d30707;
+    background-color: #880000;
     border-radius: 10px;
     color: rgb(255, 255, 255);
 }
@@ -139,8 +139,8 @@ button{
 
 h1{
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 
 }
 .popup .content {
@@ -170,7 +170,7 @@ h1{
     top: 20px;
     width: 30px;
     height: 30px;
-    background: #fff203;
+    background: #ff0303;
     color: #fff;
     font-size: 25px;
     font-weight: 600;
@@ -196,8 +196,6 @@ display: block;
     border-radius: 10px;
     size: 70px;
     text-align: center;
-
-
 
 
 }
